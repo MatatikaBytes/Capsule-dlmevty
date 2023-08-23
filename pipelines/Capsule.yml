@@ -1,0 +1,7 @@
+version: pipelines/v0.1
+name: Capsule
+timeout: 0
+data_components:
+- tap-capsulecrm
+- Warehouse
+- dbt
