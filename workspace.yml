@@ -1,5 +1,6 @@
 version: workspaces/v0.1
 name: Capsule
+default_environment: dev
 app_properties:
   WELCOME_DATASET_ALIAS: welcome
 default_data_store: Warehouse
