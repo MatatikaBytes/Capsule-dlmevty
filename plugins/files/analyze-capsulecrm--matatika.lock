@@ -1,0 +1,22 @@
+{
+  "plugin_type": "files",
+  "name": "analyze-capsulecrm",
+  "namespace": "tap_capsulecrm",
+  "variant": "matatika",
+  "label": "Capsule Insights",
+  "repo": "https://github.com/Matatika/analyze-capsulecrm",
+  "pip_url": "git+https://github.com/Matatika/analyze-capsulecrm@v1.0.0",
+  "description": "Instant insights on parties and opportunities for Capsule.",
+  "logo_url": "https://app.matatika.com/assets/images/datasource/tap-capsulecrm.svg",
+  "requires": {
+    "transforms": [
+      {
+        "name": "dbt-capsulecrm",
+        "variant": "matatika"
+      }
+    ]
+  },
+  "update": {
+    "*.yml": "true"
+  }
+}

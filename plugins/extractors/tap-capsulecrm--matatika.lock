@@ -1,0 +1,29 @@
+{
+  "plugin_type": "extractors",
+  "name": "tap-capsulecrm",
+  "namespace": "tap_capsulecrm",
+  "variant": "matatika",
+  "label": "Capsule",
+  "docs": "https://www.matatika.com/data-details/tap-capsulecrm/",
+  "repo": "https://github.com/Matatika/tap-capsulecrm",
+  "pip_url": "git+https://github.com/Matatika/tap-capsulecrm@v0.2.0",
+  "executable": "tap-capsulecrm",
+  "description": "Capsule is a customer relationship management software. \n\nCapsule is a cloud-based CRM tool that helps businesses manage their customer relationships by organizing contacts, tracking sales opportunities, and managing tasks and activities. It provides a centralized database for all customer interactions, allowing businesses to easily access customer information and history. Capsule also offers integrations with other tools such as email, social media, and accounting software to streamline workflows and improve efficiency. Its user-friendly interface and affordable pricing make it a popular choice for small and medium-sized businesses.\n ",
+  "logo_url": "https://app.matatika.com/assets/images/datasource/tap-capsulecrm.svg",
+  "capabilities": [
+    "about",
+    "state",
+    "catalog",
+    "discover"
+  ],
+  "settings": [
+    {
+      "name": "access_token",
+      "kind": "password",
+      "label": "Access token",
+      "description": "A token that grants access to the Capsule API.",
+      "protected": false,
+      "required": "true"
+    }
+  ]
+}

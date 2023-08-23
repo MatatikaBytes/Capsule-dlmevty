@@ -1,0 +1,26 @@
+{
+  "plugin_type": "transforms",
+  "name": "dbt-capsulecrm",
+  "namespace": "tap_capsulecrm",
+  "variant": "matatika",
+  "label": "dbt-capsulecrm",
+  "repo": "https://github.com/Matatika/dbt-tap-capsulecrm",
+  "pip_url": "https://github.com/Matatika/dbt-tap-capsulecrm@v1.0.0",
+  "requires": {
+    "extractors": [
+      {
+        "name": "tap-capsulecrm",
+        "variant": "matatika"
+      }
+    ],
+    "transformers": [
+      {
+        "name": "dbt",
+        "variant": "dbt-labs"
+      }
+    ]
+  },
+  "vars": {
+    "schema": "{{ env_var('DBT_SOURCE_SCHEMA') }}"
+  }
+}
